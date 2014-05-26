@@ -26,14 +26,13 @@
                 android:text="@string/first_name" />
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/edtFirst"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10" >
 
                 <requestFocus />
             </EditText>
-
         </TableRow>
 
         <TableRow
@@ -48,11 +47,10 @@
                 android:text="@string/family_name" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/edtFamily"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10" />
-
         </TableRow>
     </TableLayout>
 
@@ -62,7 +60,7 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/buttonOk"
+            android:id="@+id/btnOK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_ok" />
@@ -72,7 +70,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_cancel" />
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvMsg"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.15"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </LinearLayout>
